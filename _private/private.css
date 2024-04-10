@@ -1,0 +1,984 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --lexend-deca-: "Lexend Deca", sans-serif;
+    --pt-serif: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: var(--pt-serif);
+}
+
+/* .private1{
+    background-image: url(_images/Ozen-water-villa.jpg);
+    background-position: center;
+    padding: 26vh 15vw;
+}
+
+.private1>*{
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.private1 h3{
+    font-family: var(--lexend-deca-) ;
+}
+
+.private1 h1{
+    font-family: var(--pt-serif);
+    font-size: 4rem;
+}
+
+@media(max-width:900px){
+    .private1{
+        padding: 10vh 2vw;
+    } 
+
+    .private1>*{
+        padding-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .private1 h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media(max-width:360px){
+    .private1{
+        padding: 10vh 4vw;
+    } 
+
+    .private1>*{
+        padding-bottom: 1.5rem;
+        font-size: 1.3rem;
+    }
+
+    .private1 h1{
+        font-size: 2rem;
+    }
+} */
+
+.mainPic {
+    height: 60vh;
+    position: relative;
+
+}
+
+.mainPic img {
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.picLabel {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.picLabel h2 {
+    font-family: var(--lexend-deca-);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 5wh;
+}
+
+.picLabel h1 {
+    font-family: var(--pt-serif);
+    color: white;
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media (max-width: 900px){
+
+    .mainPic {
+        height: auto;    
+    }
+
+    .mainPic img {
+        height: 60%;
+    }
+    
+    .mainPic h2{
+        font-size: 3vw;
+    }
+
+    .mainPic h1{
+        font-size: 3vw;
+    }
+
+    .picLabel{
+        top: 30%;
+    }
+}
+    
+@media (max-width: 600px){
+    .mainPic h2{
+        font-size: 1rem;
+    }
+    .mainPic h1{
+        font-size: 1.2rem;
+    }
+}
+
+/* private2 */
+
+.private2{
+    padding: 1rem 10vw;
+}
+.priDiv1
+{
+    padding: 0 15vw;
+}
+.priDiv1>*{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 2rem; 
+    color: rgb(159,205,50);  
+}
+
+.priDiv1 p{
+    font-size: 1.2rem;
+    color: black
+}
+
+.priDiv2{
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.priDiv2 h3{
+    font-family: var(--pt-serif);
+    padding-bottom: 1rem;
+}
+
+.priContainer1{
+    background-color: rgb(159,205,50);
+    flex-basis: 50%;
+    
+}
+
+.priContainer2{
+    background-color: rgb(65,119,3);
+    flex-basis: 50%;
+}
+
+.priContainer{
+    padding: 2rem;
+  
+}
+
+.priContainer h3{
+     color: white;
+     font-size: 2rem;
+}
+
+.priContainer p{
+    color: white;
+    font-size: 1.4rem;
+    max-height: 40rem;
+    max-width: 40rem;
+}
+
+@media (max-width:900px){
+    .priDiv1{
+        padding: 0 2vw;
+    }
+}
+
+@media (max-width:700px){
+    .private2{
+        padding: 5rem 2vw;
+    }
+
+    .priDiv2{
+        column-gap: 0.5rem;
+        flex-direction: column;
+    }
+
+    .priContainer{
+        padding: 2rem 1rem;
+    }
+    .priContainer h3{
+        padding-bottom: 1rem;
+    }
+}
+
+/* private3 */
+.private3{
+    background-image:linear-gradient(rgba(0,0,0,0.5)0%,rgba(0,0,0,0.5)100%), url(_images/bgpic.jpg);
+    background-position: center;
+    height: 50rem;
+    text-align: center;
+    color: white;
+    padding: 8rem 8vw;
+}
+
+.private3 h3{
+    font-size: 2rem;
+    padding: 3rem 0;
+}
+.options{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   column-gap: 1rem;
+   backdrop-filter: blur(100px);
+   background-color: rgba(0,0,0,0.5);
+   padding: 8rem 10rem;
+   position: relative;
+}
+
+.private3 .option{
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    font-size: 1.2rem;
+}
+
+.private3 .option i{
+    font-size: 3.5rem;
+}
+
+.private3 .options a{
+    position: absolute;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem 0;
+    height: 3rem;
+    width: 12rem;
+    background-color: rgb(159,205,50) ;
+    color: white;
+}
+
+@media (max-width:900px){
+    .options{
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2vw;   
+    }
+
+    .private3 .option i{
+        font-size: 2rem;
+    }
+
+    .private3 .option{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        font-size: 1rem;
+        padding: 2rem 0;
+    }
+
+    .private3{
+        /* height: 70vh; */
+        color: white;
+        padding: 2rem 0vw;
+    }
+    
+}
+
+/* private4 */
+.private4{
+    padding: 4rem 3rem;
+}
+
+.private4> h1{
+    text-align: center;
+    padding: 0rem 8vw;
+    font-size: 2rem;
+}
+.private4 >p{
+    text-align: center;
+    padding: 2rem 8vw;
+    font-size: 1.5rem;
+}
+.photos .box img {
+    object-fit: cover;
+    position: absolute;
+}
+
+.photos .box {
+    position: relative;
+}
+
+.photos .box .imageInfo {
+    position: absolute;
+    color: white;
+    bottom: 0;
+    left: 40px;
+}
+
+.photos .imageInfo h3 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.photos .imageInfo p {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    visibility: hidden;
+}
+
+.photos .box:hover img {
+    cursor: pointer;
+    filter: brightness(50%);
+    transition: 0.3s;
+}
+
+.photos .box:hover .imageInfo p {
+    visibility: visible;
+    /* opacity: 1; */
+    transition: 0.3s;
+
+}
+
+.photos .box:hover .imageInfo {
+    bottom: 50px;
+    transition: 0.5s;
+}
+
+.photos {
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 0.3rem;
+}
+
+.photos .box1 {
+    grid-row: 1/2;
+    grid-column: 1/8;
+}
+
+.photos .box2 {
+    grid-row: 1/2;
+    grid-column: 8/12;
+}
+
+.photos .box3 {
+    grid-row: 1/2;
+    grid-column: 12/16;
+}
+
+.photos .box4 {
+    grid-row: 2/3;
+    grid-column: 1/5;
+}
+
+.photos .box5 {
+    grid-row: 2/3;
+    grid-column: 5/9;
+}
+
+.photos .box6 {
+    grid-row: 2/3;
+    grid-column: 9/16;
+}
+
+@media (max-width:1100px){
+    .photos {
+        height: auto;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,30vw);
+        grid-template-areas: "box1 box2"
+                             "box3 box4"
+                             "box5 box6";
+        gap: 0.2rem;
+    }
+    .photos .box1 {
+       grid-area: box1;
+    }
+    
+    .photos .box2 {
+        grid-area: box2;
+    }
+    
+    .photos .box3 {
+        grid-area: box3;
+    }
+    
+    .photos .box4 {
+        grid-area: box4;
+    }
+    
+    .photos .box5 {
+        grid-area: box5;
+    }
+    
+    .photos .box6 {
+        grid-area: box6;
+    }
+
+    .photos .box .imageInfo {
+        left: 20px;
+    }
+    
+    .photos .imageInfo h3 {
+        font-size: 2rem;
+    }
+    
+    .photos .imageInfo p {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .photos .box:hover .imageInfo {
+        bottom: 20px;
+    }
+}
+
+@media (max-width:650px){
+    .photos .box .imageInfo {
+        left: 10px;
+    }
+    
+    .photos .imageInfo h3 {
+        font-size: 1.3rem;
+    }
+    
+    .photos .imageInfo p {
+        font-size: 0.8rem;
+        margin-bottom: 2.5px;
+    }
+
+    .photos .box:hover .imageInfo {
+        bottom: 15px;
+    }
+}
+
+@media (max-width:600px){
+    .private4{
+        margin-top: 4rem;
+        padding:2rem 0
+    }
+
+    .photos .box .imageInfo {
+        left: 10px;
+    }
+    
+    .photos .imageInfo h3 {
+        font-size: 1rem;
+    }
+    
+    .photos .imageInfo p {
+        font-size: 0.6rem;
+        margin-bottom: 2px;
+    }
+
+    .photos .box:hover .imageInfo {
+        bottom: 10px;
+    }
+
+}
+
+/* private5 */
+
+.private5{
+    /* height: 80vh; */
+    /* width: 100vw; */
+    padding: 4rem 5vw;
+    display: flex;
+}
+
+.experts{
+    flex-basis: 45%;
+}
+.experts h2{
+    font-size: 2.2rem;
+    padding-bottom: 4rem;
+
+}
+
+.experts a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1.5rem 3rem;
+    background-color: rgb(159,205,50);
+}
+
+.experts a:hover{
+    background-color:#417703 ;
+}
+
+.guides{
+    display: grid;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    height: 40vh; */
+    gap: 1.7rem;
+    row-gap: 2.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+    padding-bottom: 4rem;
+
+}
+
+.guides img{
+    border-radius: 50%;
+    height: 12rem;
+    width: 12rem;
+    object-fit: fill;
+}
+
+.guides img:hover{
+    border-radius: 10%;
+    transition: 0.6s;
+}
+.review{
+    flex-basis: 55%;
+}
+
+.reviews{
+    padding: 2rem 3vw;
+    background-color: wheat
+}
+
+.private5 .reviews i{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #251d1d;
+}
+
+.private5 .reviews h3{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #251d1d;
+}
+
+.review .reviews p{
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #251d1d;
+}
+.tripadvisor{
+    display: flex;
+    padding-top: 6rem;
+    gap: 2rem
+}
+
+.tripadvisor img{
+    height: 4rem;
+    width: 6vw;
+}
+
+@media(max-width:1100px){
+    .private5{
+        /* height: 80vh; */
+        /* width: 100vw; */
+        padding: 4rem 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .tripadvisor{
+        display: flex;
+        padding-top: 2rem;
+        gap: 2rem;
+        justify-content: center;
+    }
+    .tripadvisor img{
+        height: 4rem;
+        width: 16vw;
+    }
+    .guides{
+        display: grid;
+        gap: 1rem;
+        row-gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        padding-bottom: 4rem;
+        justify-items: center;
+    }
+    .experts{
+        text-align: center;
+    }
+    
+    .reviews {
+        margin-top: 3rem;
+    }
+}
+
+@media(max-width:700px){
+    .experts a{
+        font-size: 0.8rem;
+        padding: 1.2rem 2rem;
+    }
+    .guides img{
+        height: 8rem;
+        width: 8rem;
+    }
+    .guides{
+        gap: 0.5rem;
+        row-gap: 1.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        padding-bottom: 4rem;
+    
+    }
+}
+
+@media (max-width:400px){
+    .tripadvisor img{
+        width: 150px;
+        height: 70px;
+    }
+}
+
+/* popupbox */
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 20; 
+}
+
+.popupbox{
+    display: flex;
+    padding: 2rem 6rem;
+    flex-direction: column;
+    width: 100rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Top{
+    position: relative;
+    display: flex;
+    padding: 2rem 0;
+    background-color: rgb(159, 205, 50);
+    color: white;
+    /* height:8rem ; */
+    justify-content: space-around;
+    /* width: 100rem; */
+}
+
+.divtop>p{
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.divtop1 input{
+    margin-bottom: 0.5rem;
+}
+
+.input{
+    padding-left: 0.5rem;
+    height: 2.5rem;
+    width: 30rem;
+    border: none;
+}
+
+.shadow{
+    padding-left: 0.5rem;
+    border:none;
+}
+
+.input1{
+   padding-left: 0.5rem;
+   height: 2.5rem;
+   width: 15rem;
+   border: none;
+}
+
+.bottom{
+    display: flex;
+    background-color: gainsboro;
+}
+
+.containerleft{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+    padding-top: 2rem;
+}
+
+.leftTop{
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 340px; */
+    justify-content: space-around;
+}
+
+.Ltop>p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.Ltop input{
+    height: 2.5rem;
+    width: 17rem;
+}
+
+.leftBottom{
+    margin: 0 auto;
+    padding: 2rem 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.leftBottom textarea{
+    min-height: 18rem;
+    min-width: 62rem;
+    resize: none;
+}
+
+.containerRight{
+    flex-basis: 25%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.right:not(:first-child){
+    padding-top: 2.2rem;
+}
+
+.right p{
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.right input{
+    height: 2.5rem;
+    width: 20rem;
+}
+
+.checkbox input{
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+.checkbox p{
+    padding-top: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.rightbtn{
+    padding-top: 3.2rem;
+}
+
+.rightbtn button{
+    background-color:rgb(159, 205, 50) ;
+    color: white;
+    height: 60px;
+    width: 320px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+
+.rightbtn button:hover{
+    background-color: rgb(98, 133, 27);
+}
+
+.shadow:focus{
+    outline: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.closebtn{
+    position: absolute;
+    background-color: red;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 800;
+    right: 0;
+    top: 0;
+}
+
+.closebtn:hover{
+    background-color: rgb(126, 19, 19);
+    cursor: pointer;
+}
+
+@media (max-width:1500px){
+    .popupbox{
+        width: 70rem;
+        padding: 2rem 2rem;
+    }
+
+    .input{
+        width: 20rem;
+    }
+
+    .input1{
+        width: 10rem;
+    }
+
+    .leftTop{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .Ltop input{
+        height: 2.5rem;
+        width: 12rem;
+    }
+
+    .leftBottom textarea{
+        min-height: 18rem;
+        min-width: 43rem;
+        resize: none;
+    }
+
+    .right input{
+        height: 2.5rem;
+        width: 12rem;
+    }
+
+    .checkbox input{
+        height: 1rem;
+        width: 1rem;
+    }
+
+    .rightbtn button{
+        height: 60px;
+        width: 200px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width:1100px){
+    .popupbox{
+        display: flex;
+        padding: 2rem 0rem;
+        flex-direction: column;
+        width: 340px;
+        height: 700px;
+        margin: auto 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .Top{
+        padding: 0.5rem 0;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+    }
+
+    .divtop>p{
+        font-size: 1rem;
+        font-weight: 800;
+    }
+
+    .Top:nth-child(1) >.divtop p{
+        font-size: 0.7rem;
+        width: 8rem;
+    }
+
+    .Top:nth-child(1) .divtop 
+    ,.Top:nth-child(2) .divtop{
+        margin-bottom: 0.2rem;
+    } 
+
+    .Top >.divtop2 input{
+        width: 20rem;
+        margin-bottom: 0.7rem;
+    }
+    .input{
+        height: 2rem;
+        width: 20rem;
+    }
+
+    .input1{
+        height: 2rem;
+        width: 9.5rem;
+    }
+
+    .Ltop>p{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .shadow{
+        margin-bottom: 0rem;
+    }
+
+    .Ltop input{
+        height: 2rem;
+        width: 10rem;
+    }
+
+    .leftTop .email input{
+        width: 20.5rem;
+    }
+
+    .bottom{
+        flex-direction: column;
+    }
+
+    .leftBottom{
+        margin: 0;
+        padding: 0.5rem 0.5rem;
+    }
+
+    .containerleft{
+        padding-top: 0.5rem;
+    }
+
+    .containerleft .leftBottom> textarea{
+        min-width: 20rem;
+        min-height:0.1rem;
+    }
+
+    .containerRight {
+        padding: 0 0.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+
+    .right:not(:first-child){
+        padding-top: 0rem;
+    }
+
+    .right p{
+        font-size: 1rem;
+    }
+
+    .right input{
+        height: 2rem;
+        width: 10rem;
+    }
+
+    .checkbox input{
+        height: 0.7rem;
+        width: 0.7rem;
+    }
+
+    .checkbox p{
+        padding-top: 0;
+        font-size: 0.7rem;
+    }
+
+    .rightbtn{
+        padding-top:0.2rem;
+    }
+
+    .rightbtn button{
+        height: 40px;
+        width: 320px;
+    }
+}

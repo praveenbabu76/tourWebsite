@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --lexend-deca-: "Lexend Deca", sans-serif;
+    --pt-serif: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: var(--lexend-deca-);
+}
+
+
+.mainPic {
+    height: 60vh;
+    position: relative;
+
+}
+
+.mainPic img {
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.picLabel {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.picLabel h2 {
+    font-family: var(--lexend-deca-);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 5wh;
+}
+
+.picLabel h1 {
+    font-family: var(--pt-serif);
+    color: white;
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media (max-width: 900px){
+
+    .mainPic {
+        height: auto;    
+    }
+
+    .mainPic img {
+        height: 60%;
+    }
+    
+    .mainPic h2{
+        font-size: 3vw;
+    }
+
+    .mainPic h1{
+        font-size: 3vw;
+    }
+
+    .picLabel{
+        top: 30%;
+    }
+}
+    
+@media (max-width: 600px){
+    .mainPic h2{
+        font-size: 1rem;
+    }
+    .mainPic h1{
+        font-size: 1.2rem;
+    }
+}
+/* single2 */
+
+.single2{
+    width: 90%;
+    padding: 3rem 0;
+    margin: 0 auto;
+}
+
+.single2 h2{
+    font-size: 2rem;
+    padding: 5rem 0;
+}
+
+.op{
+    padding-bottom: 0.5rem;
+}
+
+
+.selectionbar .options{
+    display:flex;
+    justify-content: space-around;
+    /* padding-bottom: 1rem; */
+    font-size: 1.3rem;
+    border-bottom: solid 2px rgb(159, 205, 50) ;
+}
+
+.selectionbar .option:hover{
+    cursor: pointer;
+}
+
+.highlights{
+    display: flex;
+    column-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.high{
+    border-bottom: 3px solid rgb(65,119,3);
+}
+
+.highlightsContent1{
+    flex-basis: 30%;
+    background-color:rgb(238,238,238);
+}
+
+.contentinfo{
+    width: 90%;
+    margin: 2rem auto;
+    border-bottom: 3px solid  rgb(218,218,218); 
+    font-size: 1.2rem;
+}
+
+.price{
+    width: 90%;
+    margin: 2rem auto;
+    background-color: rgb(218,218,218);
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+
+.price h3{
+    height: 40px;
+    width: 200px;
+    background-color:rgb(159, 205, 50) ;
+    color: white;
+    padding: 10px 0;  
+    margin:0 auto 2rem auto;
+    cursor: pointer;
+}
+
+.price h3:hover{
+    background-color: rgb(65, 119, 3) ;
+}
+
+.price p{
+    font-size: 1.2rem;
+}
+
+.highlightsContent2{
+    flex-basis: 70%;
+}
+
+@media (max-width:900px){
+    .highlights{
+        flex-direction: column;
+        height: 70rem;
+    }
+}
+
+/* @media (max-width:500px){
+    .selectionbar .options{
+        flex-direction: column;
+    }
+    .high{
+        border-left: 3px solid rgb(65,119,3);
+    }
+} */
+
+@media (max-width:500px){
+    .selectionbar .options h4{
+        font-size: 0.8rem;
+    }
+}
+
+/* description */
+
+.description{
+    display: none;
+    column-gap: 2rem;
+    padding: 2rem 0;
+}
+
+.descriptionContent1{
+    flex-basis: 30%;
+    background-color:rgb(238,238,238);
+    padding-top: 2rem;
+}
+
+.descriptiontinfo{
+    width: 90%;
+    margin: 0rem auto;
+    font-size: 1.2rem;
+}
+
+.descriptiontinfo p{
+    padding-bottom: 2rem;
+}
+
+.descriptiontinfo p span{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.descriptiongrid{
+    display: grid;
+    grid-template-columns: 30% 10% 1fr;
+    width: 80%;
+    height: 6rem;
+}
+
+.descriptiongrid .descriptionMarker{
+    position: relative;
+    /* background-color: red; */
+}
+
+.descriptiongrid .descriptionMarker::before{
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: #9fcd32;
+} 
+
+.descriptiongrid:not(:last-child) .descriptionMarker::after{
+    content: "";
+    width: 0.2rem;
+    height: 6rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 0;
+    background-color: #9fcd32;
+}
+
+.descriptiongrid .descriptionTime{
+    align-self: center;
+    color: #9fcd32;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.descriptiongrid:nth-child(2) .descriptionLocation,
+.descriptiongrid:nth-child(6) .descriptionLocation {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.descriptionContent2{
+    flex-basis: 70%;
+    font-size: 1.2rem;
+}
+
+.descriptionpara p{
+    padding-bottom: 2rem;
+}
+
+.descriptionContent2 .descriptionpara>:first-child{
+    font-weight: bolder;
+}
+
+.descriptionpara a{
+    height: 50px;
+    width: 250px;
+    text-decoration: none;
+    color: white;
+    background-color: #9fcd32;
+    padding: 10px 10px;
+}
+
+.descriptionpara a:hover{
+   background-color:rgb(65, 119, 3) ;
+}
+
+@media (max-width:1000px){
+    .description{
+        display: flex;
+        column-gap: 2rem;
+        flex-direction: column;
+    }
+
+    .descriptionContent2 .descriptionpara>:first-child{
+        padding-top: 2rem;
+    }
+}
+
+/* gallery */
+
+.gallery{
+    display: none;
+    column-gap: 2rem;
+    padding: 2rem 0;
+   
+}
+
+.gallery img{
+    object-fit: cover;
+}
+
+.gallery .photos {
+    display: grid;
+    flex-basis: 35%;
+    height: 45rem;
+    grid-template-columns: repeat(2,50%);
+    grid-template-rows: repeat(3,14.85rem);
+    grid-template-areas: "box1 box2"
+                         "box3 box4"
+                         "box5 box6";
+    gap: 0.2rem;
+    object-fit: cover;
+}
+.photos .box1 {
+   grid-area: box1;
+}
+
+.photos .box2 {
+    grid-area: box2;
+}
+
+.photos .box3 {
+    grid-area: box3;
+}
+
+.photos .box4 {
+    grid-area: box4;
+}
+
+.photos .box5 {
+    grid-area: box5;
+}
+
+.photos .box6 {
+    grid-area: box6;
+}
+
+.gallery .galleryphoto{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0%;
+}
+
+@media (max-width:1100px){
+    .gallery{
+        flex-direction: column;
+    }
+    .photos{
+        padding-bottom: 2rem;
+    }
+
+}
+
+@media (max-width:900px){
+    .single2 h2{
+        padding: 0 0 4rem  0;
+        text-align: center;
+        font-size: 1.6rem;
+    }
+}
+
+/* single3 */
+.single3{
+    /* height: 45rem; */
+    position: relative;
+}
+
+.divslidegallery{
+    display: flex;
+    overflow-x:scroll ;
+    scroll-behavior: smooth;
+    max-height: 30rem;
+}  
+
+
+
+.divslidegallery::-webkit-scrollbar{
+    display: none;
+}
+
+.divslidegallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    flex: none;
+
+}
+
+.divslidegallery div img{
+    /* height: 35rem; */
+    filter: grayscale(50%);
+    cursor: pointer;
+    transition: 0.8s;
+    object-fit: cover;
+}
+
+.btn{
+    position: absolute;
+    top: 40%;
+    /* left: 50%; */
+    transform: translateY(-50%, -50%);
+    cursor: pointer;
+}
+
+#backbtn{
+    left: 3rem;
+}
+
+#nextbtn{
+    right: 3rem;
+}
+
+.btn:hover{
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 2px rgb(143, 201, 56);
+}
+
+.divslidegallery div img:hover{
+    filter: grayscale(0);
+    transform: scale(1.1);
+}
+
+@media (max-width:900px){
+
+    .divslidegallery div img{
+        height: 25rem
+    }
+
+    .btn{
+        height: 4rem;
+    }
+    .divslidegallery{
+        display: flex;
+        overflow-x:scroll ;
+        scroll-behavior: smooth;
+        /* height: 25rem; */
+    }  
+    
+}
+
+@media (max-width:600px){
+
+    .divslidegallery div img{
+        height: 12rem
+    }
+
+    .btn{
+        top:40%;
+        height: 2rem;
+    }
+}
+
+/* single4 */
+
+.single4{
+    height: 10rem;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.single4 a{
+    text-decoration: none;
+    height: 80px;
+    width: 250px;
+    background-color: #9fcd32;
+    color: white;
+    padding: 10px 1rem;
+    cursor: pointer;
+    text-align: center;
+    margin: 6rem auto;
+}
+
+.single4 a:hover{
+    background-color:rgb(65, 119, 3) ;
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private - Ecotour | by Praveen Babu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="private.css" />
+    <link rel="stylesheet" href="../_shared/shared.css" />
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <div class="menubar">
+                <a id="#" href="#" onclick="openSideBar(event)"><svg height="40px" viewBox="0 -960 960 960"
+                        width="40px">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></path>
+                    </svg></a>
+                <div class="sidebars">
+                    <div class="closeButton"><button onclick="closeSideBar(event)">X</button></div>
+                    <ul>
+                        <a id="sideBar" href="../index.html">HOME</a>
+                        <a id="sideBar" href="../_destination/destination.html">DESTINATION</a>
+                        <a id="sideBar" href="private.html" style="background-color: rgb(45, 70, 17)">PRIVATE TOUR</a>
+                        <a id="sideBar" href="../_singletour/singletour.html">SINGLE TOUR</a>
+                        <a id="sideBar" href="../_tourlist/tourlist.html">TOUR LIST</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="../_images/logo.jpg" width="90px" height="90px">
+                <p>Ecotour <span>Palau</span></p>
+            </div>
+            <div class="getintouch">
+                <svg viewBox="0 0 512 512" width="18px" height="40px">
+                    <path
+                        d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z" />
+                </svg>
+                <p>GET IN TOUCH</p>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- <div class="private1">
+            <h3>RECEIVE VIP TREATMENT</h3>
+            <h1>Privatre Tours</h1>
+        </div> -->
+        <div class="mainPic">
+            <img class="lazyLoad" src="_images/Ozen-water-villa-min.jpg" width="100%" height="100%" data-src="_images/Ozen-water-villa.jpg">
+            <div class="picLabel">
+                <h2>RECEIVE VIP TREATMENT</h2>
+                <h1>Privatre Tours</h1>
+            </div>
+        </div>
+        <div class="private2">
+            <div class="priDiv1">
+                <h4>Privatize Any of Our Daytrips</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi ducimus, ipsum eligendi iste quia
+                    placeat necessitatibus porro sed aperiam eum voluptas architecto excepturi.</p>
+            </div>
+            <div class="priDiv2">
+                <div class="priContainer1 priContainer">
+                    <h3>Tailor Made Trips</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam nam minima ipsa
+                        architecto ipsam dolore quae sequi aut, voluptate perspiciatis animi optio, ut odit repellat
+                        debitis eos nesciunt aliquam voluptatibus ratione!</p>
+                </div>
+                <div class="priContainer2 priContainer">
+                    <h3>Groups</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laboriosam nam minima ipsa
+                        architecto ipsam dolore quae sequi aut, voluptate perspiciatis animi optio, ut odit repellat
+                        debitis!</p>
+                </div>
+            </div>
+        </div>
+        <div class="private3">
+            <h3>Let's Get Strated?</h3>
+            <div class="options">
+                <div class="option">
+                    <i class="fa-solid fa-magnifying-glass-location fa-2xl" style="color: #ffffff;"></i>
+                    <h4>select your travel experience</h4>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-hand-pointer fa-2xl" style="color: #ffffff;"></i>
+                    <h4>choose a depature date</h4>
+                </div>
+                <div class="option">
+                    <i class="fa-solid fa-phone-volume fa-2xl" style="color: #ffffff;"></i>
+                    <h4>Call us to book your trip</h4>
+                </div>
+                <a href="#" onclick="openPopup(event)">GET STRATED</a>
+            </div>
+        </div>
+        <div class="popup-overlay">
+            <div class="popupbox">
+                <form id="form">
+                    <div class="Top">
+                        <div class="divtop divtop1">
+                            <p for="experience">SELECT YOUR TRAVEL EXPERIENCE</p><br>
+                            <input id="experience" class="input shadow" type="text"
+                                placeholder="Discove the Palau and the Deep South" required>
+                        </div>
+                        <div class="divtop divtop2">
+                            <p for="Date">Select Date</p><br>
+                            <input id="Date" class="input1 shadow" type="Number" placeholder="dd/mm/yy" required>
+                        </div>
+                        <div class="divtop">
+                            <p for="noadults">No of Adults</p><br>
+                            <input id="noadults" class="input1 shadow" type="number" placeholder="" required>
+                        </div>
+                        <div class="divtop">
+                            <p for="nochild">No of Children</p><br>
+                            <input id="nochild" class="input1 shadow" type="number" placeholder="" required>
+                        </div>
+                        <span class="closebtn" onclick="closePopup(event)">X</span>
+                    </div>
+                    <div class="bottom">
+                        <div class="containerleft">
+                            <div class="leftTop">
+                                <div class="Ltop">
+                                    <p for="Fname">First Name</p><br>
+                                    <input id="Fname" class="shadow" type="text" placeholder="FirstName" required>
+                                </div>
+                                <div class="Ltop">
+                                    <p for="Lname">Last Name</p><br>
+                                    <input id="Lname" class="shadow" type="text" placeholder="LastName" required>
+                                </div>
+                                <div class="Ltop email">
+                                    <p for="Email">Email</p><br>
+                                    <input id="EMail" class="shadow" type="Email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="leftBottom">
+                                <p for="message">Message</p><br>
+                                <textarea id="message" class="shadow" rows="5" class="textarea" required></textarea>
+                            </div>
+                        </div>
+                        <div class="containerRight">
+                            <div class="right">
+                                <p for="phone">Phone</p><br>
+                                <input id="phone" class="shadow" type="number" placeholder="Phone No" required>
+                            </div>
+                            <div class="right">
+                                <p for="place">I'm from</p><br>
+                                <input id="place" class="shadow" type="text" required>
+                            </div>
+                            <div class="right checkbox">
+                                <input type="checkbox" id="checkbox">
+                                <p for="checkboc">I've read and agree to the privacy policy</p>
+                            </div>
+                            <div class="rightbtn">
+                                <button class="shadow" onclick="clearform(event)">SEND TRAVEL REQUEST</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="private4">
+            <h1>Get Inspired</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores suscipit assumenda vel perferendis a
+                id delectus impedit pariatur, consequuntur quia cupiditate nam!</p>
+            <div class="photos">
+                <div class="box box1">
+                    <img src="../_images/boating.jpg" width="100%" height="100%">
+                    <div class="imageInfo">
+                        <h3>Boating</h3>
+                        <p>Deparing From: Palau</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae perspiciatis. Este colom
+                            suptle!</p>
+                    </div>
+                </div>
+                <div class="box box2">
+                    <img src="../_images/underwater.jpg" width="100%" height="100%">
+                    <div class="imageInfo">
+                        <h3>UnderWater Exploration</h3>
+                        <p>Deparing From: Palau Beach</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae perspiciatis. Este colom
+                            suptle!</p>
+                    </div>
+                </div>
+                <div class="box box3">
+                    <img src="../_images/beachparty.jpg" width="100%" height="100%">
+                    <div class="imageInfo">
+                        <h3>Beach Party</h3>
+                        <p>Deparing From: Palau Resort</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae perspiciatis. Este colom
+                            suptle!</p>
+                    </div>
+                </div>
+                <div class="box box4">
+                    <img src="../_images/forestexploratio.jpg" width="100%" height="100%">
+                    <div class="imageInfo">
+                        <h3>Forest Exploration</h3>
+                        <p>Deparing From: Palau WesternCoast</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae perspiciatis. Este colom
+                            suptle!</p>
+                    </div>
+                </div>
+                <div class="box box5">
+                    <img src="../_images/hiking.jpg" width="100%" height="100%">
+                    <div class="imageInfo">
+                        <h3>Hiking</h3>
+                        <p>Deparing From: Palau Hill</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae perspiciatis. Este colom
+                            suptle!</p>
+                    </div>
+                </div>
+                <div class="box box6">
+                    <img src="../_images/skydiving.jpg" width="100%" height="100%">
+                    <div class="imageInfo">
+                        <h3>Sky Diving</h3>
+                        <p>Deparing From: Palau beachside</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure vitae perspiciatis. Este colom
+                            suptle!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="private5">
+            <div class="experts">
+                <h2>Our Guides & Local Experts</h2>
+                <div class="guides">
+                    <img src="_images/dhoni.jpg" width="100%" height="100%" alt="404">
+                    <img src="_images/me.jpg" width="100%" height="100%" alt="404">
+                    <img src="_images/rajini.jpg" width="100%" height="100%" alt="404">
+                    <img src="_images/kashmira.jpg" width="100%" height="100%" alt="">
+                    <img src="_images/malika.jpg" width="100%" height="100%" alt="">
+                    <img src="_images/priyanka.jpg" width="100%" height="100%" alt="">
+                </div>
+                <a href="#navbar">MEET OUR GUIDES</a>
+            </div>
+            <div class="review">
+                <div class="reviews">
+                    <i class="fa-solid fa-quote-right fa-2xl" style="color: #251d1d;"></i>
+                    <h3>Fantastic Experience!</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias aut pariatur quam doloribus
+                        blanditiis itaque. Eveniet cupiditate sequi hic iste provident, beatae qui consequuntur nemo
+                        exercitationem reprehenderit ea aspernatur minus porro aliquam iure enim at.</p>
+                    <h3>PRAVEEN BABU</h3>
+                    <span>
+                        <i class="fa-solid fa-spa fa-lg"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                        <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                        <span>Reviwed 1 week ago</span>
+                    </span>
+                </div>
+                <div class="tripadvisor">
+                    <img src="_images/TripAdvisor-Logo.png" alt="Image Not Found 404 Error!" width="200px"
+                        height="150px">
+                    <div class="triprev">
+                        <h3>ECHOTOUR PALAU</h3>
+                        <span>
+                            <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                            <i class="fa-solid fa-star fa-lg" style="color: #417703;"></i>
+                            <i class="fa-solid fa-star-half-stroke fa-lg" style="color: #417703;"></i>
+                            <span>50 Reviews</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="bookDate">
+            <div class="container1">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="50" width="40"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                        <path fill="#ffffff"
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192h80v56H48V192zm0 104h80v64H48V296zm128 0h96v64H176V296zm144 0h80v64H320V296zm80-48H320V192h80v56zm0 160v40c0 8.8-7.2 16-16 16H320V408h80zm-128 0v56H176V408h96zm-144 0v56H64c-8.8 0-16-7.2-16-16V408h80zM272 248H176V192h96v56z" />
+                    </svg>
+                </div>
+                <div>
+                    <h1>Book Now</h1>
+                    <h2>Enjoy Your Date With Your Loved One's</h2>
+                </div>
+            </div>
+            <div class="container2">
+                <p>CHECK THE DATES</p>
+            </div>
+        </div>
+        <div id="info">
+            <div class="container container1">
+                <div class="logo">
+                    <i class="fa-solid fa-leaf fa-beat-fade fa-xl" style="color: #85e029;"></i>
+                    <!-- <img src="_images\logo.jpg" width="50px" height="50px"> -->
+                    <p>Ecotour <span>Palau</span></p>
+                </div>
+                <div class="ab">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab cum, eum neque eaque
+                        voluptate laboriosam voluptates illum consectetur adipisicing. </p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti ab cum, eum neque eaque </p>
+                </div>
+            </div>
+            <div class="container container2">
+                <div>
+                    <h2>ABOUT US</h2>
+                </div>
+                <div>
+                    <a href="#navbar">ABOUT ECOTOUR</a>
+                    <a href="#navbar">PALAU</a>
+                    <a href="#navbar">OUR TEAM</a>
+                    <a href="#navbar">GUESTBOOK</a>
+                    <a href="#navbar">IMPRINT</a>
+                </div>
+            </div>
+            <div class="container container2">
+                <h2>CUSTOMER SERVICE</h2>
+                <div>
+                    <a href="#navbar">BOOKING CONDITIONS</a>
+                    <a href="#navbar">CONTACT US</a>
+                    <a href="#navbar">FAQ'S</a>
+                    <a href="#navbar">LEGAL NOTICE</a>
+                    <a href="#navbar">PRIVACY POLICY</a>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <h2>RESERVATIONS & BOOKINGS</h2>
+                </div>
+                <div class="subContainer">
+                    <div>
+                        <p>MONDAY TO FRIDAY</p>
+                        <p>from 8:00 am to 8:00 pm</p>
+                    </div>
+                    <div>
+                        <p>SATURDAY & SUNDAY</p>
+                        <p>from 9:00 am to 5:00 pm</p>
+                    </div>
+                    <div>
+                        <p>ATLANTIC STANDARD TIME</p>
+                        <p>+1(809) 856 2260</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <h2>FOLLOW US ON</h2>
+                <div class="socialMedia">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-bounce fa-2xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram fa-bounce fa-2xl"
+                            style="color: #ffffff;"></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-twitter fa-bounce fa-2xl"
+                            style="color: #ffffff;"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../_shared/shared.js"></script>
+</body>
+
+</html>

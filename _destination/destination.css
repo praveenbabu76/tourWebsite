@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --lexend-deca-: "Lexend Deca", sans-serif;
+    --pt-serif: "PT Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    font-family: var(--pt-serif);
+}
+
+.mainPic {
+    height: 60vh;
+    position: relative;
+
+}
+
+.mainPic img {
+    object-fit: cover;
+    filter: brightness(90%);
+}
+
+.picLabel {
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.picLabel h2 {
+    font-family: var(--lexend-deca-);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-bottom: 5wh;
+}
+
+.picLabel h1 {
+    font-family: var(--pt-serif);
+    color: white;
+    margin: 20px 0;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+@media (max-width: 900px){
+
+    .mainPic {
+        height: auto;    
+    }
+
+    .mainPic img {
+        height: 60%;
+    }
+    
+    .mainPic h2{
+        font-size: 3vw;
+    }
+
+    .mainPic h1{
+        font-size: 3vw;
+    }
+
+    .picLabel{
+        top: 30%;
+    }
+}
+    
+@media (max-width: 600px){
+    .mainPic h2{
+        font-size: 1rem;
+    }
+    .mainPic h1{
+        font-size: 1.2rem;
+    }
+}
+
+/* about */
+
+.about{
+    text-align: center;
+    padding: 10rem 8vw;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+.about>*{
+    margin-bottom: 40px ;
+}
+
+@media  (max-width: 900px) {
+    .about{
+        padding:3rem 6vw ;
+        font-size: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+}
+
+/* IMage gallery */
+
+.imgGallery{
+    display: flex;
+    width: 100%;
+    height: 40vh;
+}
+
+.imgGallery img{
+    width: 32.97vw;
+    object-fit: cover;
+}
+
+@media (max-width:900px) {
+    .imgGallery{
+        flex-direction:column ;
+        height: auto;
+    }
+
+    .imgGallery img{
+        width: 100%;
+    }
+    
+}
+
+/* Geography */
+
+.geoGraphy{
+    display: flex;
+    min-height: 90vh;
+    padding: 10rem 0;
+    justify-content:center;
+    column-gap: 6VW;
+    background-color: rgb(255, 253, 253);
+}
+
+.geoGraphy .div1{
+    flex-basis: 30%;
+    max-width: 80rem;
+}
+
+.geoGraphy .div2{
+    flex-basis: 20%;
+}
+
+.geoGraphy .div1 h1{
+    font-size: 2.5rem;
+    padding: 2.5vh 0;
+    /* letter-spacing: 2px; */
+}
+
+.geoGraphy .div1 p{
+    font-size: 1.4rem;
+    padding-bottom: 2vh;
+    /* letter-spacing: 2px; */
+}
+
+.geoGraphy .div2 img{
+    width: 20vw;
+    padding-bottom: 8vh;
+}
+
+.geoGraphy .div2 .geo{
+    padding: 2rem 0;
+    position: relative;
+    background-color: rgb(255, 245, 245);
+}
+
+.geoGraphy .div2 p{
+    padding: 35px 25px;
+    text-align: center;
+    color: #74C0FC; 
+    font-weight: bolder;
+}
+
+.geoGraphy .div2 i{
+    top: 0;
+    left: -1rem;
+    position: absolute;
+}
+
+@media (max-width:900px){
+    .geoGraphy{
+        flex-direction: column;
+        padding: 2rem 2rem;
+    }
+
+    .geoGraphy .div1 p{
+        font-size: 1rem;
+    }
+
+    .geoGraphy .div1 h1{
+        font-size: 2rem;
+    }
+
+    .geoGraphy .div2 img{
+        width: 100%;
+        padding-bottom: 8vh;
+    }
+
+    .geoGraphy .div2 .geo{
+        margin-bottom: 4vh;
+    }
+}
+
+/* sidepic */
+
+.sidePic{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("_images/Anantara-Dhigu_Maldives.jpg");
+    color: white;
+    padding: 20rem 8vw;
+    text-align: center;
+    background-position: center;
+    object-fit: cover;
+}
+
+.sidePic h3{
+    font-size: 2vw;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+@media (max-width: 900px){
+.sidePic {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.sidePic h3{
+    font-size: 3vw;
+}
+}
+
+/* History */
+
+.history{
+    padding: 12rem 8rem  ;
+    background-color: rgb(248,248,248);
+}
+.history h2{
+    text-align: center;
+    font-size: 2rem;
+    padding-bottom: 6vh;
+}
+
+.hisContent{
+    display: flex;
+    gap: 2vw;
+}
+
+.hisContent p{
+    font-size: 1.4rem;
+    word-spacing: 3px;
+    
+}
+
+@media (max-width:900px){
+    .history{
+        padding: 2rem;
+    }
+    .hisContent p{
+        font-size: 1rem;
+    }
+    .history h2{
+        font-size: 1.8rem;
+        padding-bottom: 2vh;
+    }
+}
+
+@media (max-width:450px){
+    .history{
+        padding: 2rem;
+    }
+    .hisContent {
+        flex-direction: column;
+        row-gap: 1rem
+        ;
+    }
+    .history h2{
+        font-size: 1.8rem;
+        padding-bottom: 2vh;
+    }
+}
+
+
+/* video */
+
+
+/* .videoContainer {
+    height: 90vh;
+    position: relative;
+    background-image: url(_images/videobg.jpg);
+
+}
+
+.videoContainer .video {
+    position: absolute;
+    width: 60%;
+    top: 46%;
+    right: 10vw;
+    transform: translateY(-50%);
+}
+
+.videoContainer .video video {
+    width: 100%;
+}
+
+.videoContent {
+    width: 40vw;
+    height: 40vh;
+    position: absolute;
+    top: 25%;
+    background-color: white;
+    left: 8vw;
+    z-index: 1;
+}
+
+.videoContent h2 {
+    padding: 6vh 2vw;
+    font-size: 2rem;
+    color: rgb(18, 237, 237);
+}
+
+
+.videoContent h3 {
+    padding: 0vh 2vw;
+    color: rgb(65, 119, 3);
+}
+
+.videoContent p {
+    padding: 2vh 2vw;
+    font-size: larger;
+}
+
+.videoContent a {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(159, 205, 50);
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.videoContent a:hover {
+    background-color: rgb(65, 119, 3);
+}
+
+@media (max-width: 1200px){
+
+    .videoContainer{
+        display: flex;
+        flex-direction: column;
+        background-image: none;
+    }
+
+    .videoContainer .video{
+       width: 100%;
+       right: 0vw;
+       top: 64%;
+    }
+    
+    .videoContainer .video video{
+        width: 100%;
+        position: absolute;
+        top: 46%;
+        transform: translateY(-50%);
+    }
+
+    .videoContent {
+        width: 100%;
+        height: 40vh;
+        padding: 0 0.5rem;
+        top:22.2%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .videoContent h2{
+        text-align: center;
+
+    }
+
+    
+}
+
+@media only screen and (orientation: landscape) and (max-width:950px) {
+    .videoContent {
+        height: 65vh;
+        
+    }
+
+    .videoContainer{
+        height: 160vh;
+    }
+}
+
+@media (max-width: 600px){
+
+    .videoContainer {
+        height: 95vh;
+        padding: 6vh 0;
+    }
+    
+    .videoContent {
+        position: absolute;
+        width: 100%;
+        height: 26rem;
+        top:32%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .videoContainer .video{
+        top: 75%; 
+    }
+
+    .videoContent h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+} */

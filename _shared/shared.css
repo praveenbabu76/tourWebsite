@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+:root{
+    --roboto: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.lazyLoad {
+    filter: blur(10px) brightness(50%) !important;
+}
+
+#navbar{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    padding: 5px 10px;
+    align-items: center;
+    justify-content: space-around;
+    box-sizing: border-box;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo p{
+    color: skyblue;
+    font-size: xx-large;
+}
+
+.logo span{
+    color: lightgreen;
+}
+
+.getintouch{
+    width: 220px;
+    height: 50px;
+    font-size:larger;
+    border: 1px solid lightgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;   
+}
+
+.getintouch:hover{
+    background-color: whitesmoke;
+}
+.sidebars{
+    position: fixed;
+    width: 400px;
+    height: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0; 
+    /* background-color: rgb(63, 231, 63);  */
+    background-color:rgb(65,119,3);
+    display:none;
+    text-align: center;
+}
+
+/* .sidebars ul a{
+    padding: 30px 0;
+} */
+
+
+
+.sidebars ul{
+    display: flex;
+    flex-direction: column;   
+}
+
+.closeButton{
+    height: 40px;
+    margin-bottom: 20px;
+}
+.closeButton button{
+   float: right;
+   width: 40px;
+   height: 40px;
+   border: none;
+   font-size: x-large;
+   color: white;
+   background-color: red;
+   cursor: pointer;
+}
+.closeButton button:hover{
+    background-color: rgb(225, 14, 14);
+}
+
+.sidebars a{
+    text-decoration: none;
+    color: white;
+    font-weight:bolder;
+    font-size:x-large ;
+    padding: 35px 0; 
+    text-align: center; 
+}
+
+.sidebars a:hover{
+    background-color:rgb(159,205,50);
+}
+
+@media (max-width:500px){
+    #humberger svg{
+        height: 30px;
+    }
+
+    .logo img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .logo p{
+        font-size: 1.2rem;
+    }
+    
+    .getintouch{
+        height: 40px;
+        width: 130px;
+    }
+    
+    .getintouch >*{
+        font-size: 0.8rem;
+    }
+
+    .sidebars{
+        width: 300px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width:950px){
+    .sidebars{
+        height: 100%;
+    }
+
+    .sidebars a{
+        padding: 10px 0;
+    }
+}
+
+/* bookdate */
+
+#bookDate{
+    width: 100%;
+    height: 250px;
+    background-color:rgb(159,205,50) ;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 100px;
+    padding: 0 10px;
+    
+}
+
+#bookDate h1{
+    color: white;
+    padding: 10px 0;
+}
+
+#bookDate h2{
+    color:rgb(65,119,3);
+}
+
+#bookDate .container1{
+    display: flex;
+    column-gap: 20px;
+}
+
+#bookDate .container2{
+    width: 220px;
+    height: 50px;
+    font-size:larger;
+    background-color: white;
+    color:rgb(65,119,3); 
+    text-align: center;
+    cursor: pointer;
+}
+
+#bookDate .container2 p{
+    padding: 15px 0;
+}
+#bookDate .container2:hover{
+    background-color: rgb(65,119,3);
+    color: white;
+}
+
+@media (max-width:400px){
+    #bookDate h1{
+        font-size: 1.4rem;
+    }
+    #bookDate h2{
+        font-size: 1rem;
+    }
+
+    #bookDate .container2{
+        width:160px;
+        font-size: 1rem;
+    }
+}
+/* footer */
+#info{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: rgb(65,119,3);
+}
+
+#info .container{
+    /* width: 20%; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    row-gap: 40px;
+}
+
+#info .container .logo i{
+    padding-right: 10px;
+}
+
+#info .container h2{
+    margin-top: 15px;
+    color: lightgreen;
+}
+
+
+
+#info .container1 .ab{
+    width: 200px;
+    font-size: larger;
+    color: white; 
+}
+
+
+#info .container2 div{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    text-align: center;
+
+}
+
+#info .container2 div a{
+    text-decoration: none;
+    color: white;
+}
+
+#info .subContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    color: white;
+}
+
+
+.socialMedia a{
+    padding-left: 20px;
+}
+
+
+/* video container */
+
+.videoContainer{
+    position: relative;
+    height: 40vw
+}
+
+.videoContainerImg {
+    width: 100%;
+    height: 100%
+}
+
+.videoContent {
+    background-color: #fff;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 8vw;
+    padding: 3vw 3vw 6rem 3vw;
+    width: 40%;
+    z-index: 5
+}
+
+.videoContainer .videoContent h3,h5{
+    padding-bottom: 1.5rem;
+    /* font-size: 1.2rem; */
+}
+
+.infoBtn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(159, 205, 50);
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.vid {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8vw;
+    width: 55%
+}
+
+@media only screen and (max-width: 1200px) {
+    .videoContent {
+        width:50%;
+        left: 4vw
+    }
+
+
+    .vid {
+        right: 4vw
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .videoContainer {
+        width:calc(100% - 9vw);
+        height: 50vw;
+        margin: 0 auto calc(50vw + 4rem) auto;
+        
+    }
+
+    .videoContent{
+        width: 90%;
+        height: 80%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .vid {
+        width: 100%;
+        height: 50vw;
+        top: initial;
+        left: 0;
+        bottom: -50vw;
+        transform: translate(0, 0)
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .videoContainer {
+        width:100%;
+        height: auto;
+    }
+
+    .videoContainerImg {
+        display: none
+    }
+
+    .videoContent {
+        width: 100%;
+        height: auto;
+        padding: 2rem 1rem 4rem 1rem;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+        position: relative
+    }
+
+    .vid{
+        height: auto;
+    }
+
+}
