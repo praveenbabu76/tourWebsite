@@ -436,7 +436,7 @@
 
 .WhyBook {
     height: 100vh;
-    background-image: url(_images/main.jpg);
+    background-image: url(images/main.jpg);
     filter: brightness(80%);
     color: #fff;
     padding: 4rem 0;

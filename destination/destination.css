@@ -208,7 +208,7 @@ body{
 /* sidepic */
 
 .sidePic{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("_images/Anantara-Dhigu_Maldives.jpg");
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url("images/Anantara-Dhigu_Maldives.jpg");
     color: white;
     padding: 20rem 8vw;
     text-align: center;
